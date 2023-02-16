@@ -3,24 +3,17 @@ public class Document {
     private String date;
     private String author;
 
-    public Document(String title, String date, String author) {
+    void setTitle(String title) {
         this.title = title;
+    }
+
+    void setDate(String date) {
         this.date = date;
+    }
+
+    void setAuthor(String author) {
         this.author = author;
     }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
     @Override
     public String toString() {
         return  "title=" + title +
