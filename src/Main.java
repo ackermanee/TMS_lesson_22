@@ -22,9 +22,9 @@ public class Main {
         Map<String, Document> map = new HashMap<>();
         Set<String> contractSet = new HashSet<>();
         try (BufferedReader br = new BufferedReader(new FileReader("Document.txt"))) {
-            String array;
-            while ((array = br.readLine()) != null) {
-                String[] infPerson = array.split(",");
+            String string;
+            while ((string = br.readLine()) != null) {
+                String[] infPerson = string.split(",");
                 String number = infPerson[0].trim();
                 if (!contractSet.contains(number)) {
                     contractSet.add(number);
